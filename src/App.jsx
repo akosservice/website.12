@@ -308,7 +308,7 @@ const Navigation = ({ lang, setLang, text }) => {
           <img 
             src={loraLogo} 
             alt="Lora Naturals" 
-            className={`h-8 md:h-10 w-auto object-contain transition-all duration-500 ${logoInvert ? "brightness-0 invert" : ""}`} 
+            className={`h-8 md:h-10 w-auto object-contain transition-all duration-500 ${logoInvert ? "" : ""}`} 
           />
           <div className="flex flex-col">
             <h1 className={`text-lg font-serif font-bold tracking-tight leading-none transition-colors duration-500 ${isOpen ? "text-white" : textColor}`}>
