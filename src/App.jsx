@@ -16,6 +16,8 @@ import {
   Quote
 } from 'lucide-react';
 import loraLogo from './assets/lorapng.png';
+// Importing the collection image
+import collectionImg from './assets/image.jpg'; 
 
 // --- content / Translations ---
 
@@ -32,12 +34,12 @@ const content = {
     },
     hero: {
       est: 'Est. 2016 • Vayackal',
-      title1: 'Stone',
+      title1: 'Natural Stones',
       title2: '&',
-      title3: 'Soil',
-      sub: "Curating earth's finest materials to create sanctuaries.\nDirect from our factory to your doorstep.",
+      title3: 'Landscaping',
+      sub: "High-Quality Natural Stones & Trusted Landscaping Services Across Kerala.\nDirect from our factory to your doorstep.",
       cta_collection: 'View Collection',
-      cta_studio: 'Visit Studio'
+      cta_studio: 'Find US'
     },
     about: {
       label: 'The Philosophy',
@@ -49,18 +51,28 @@ const content = {
     products: {
       label: 'Our Materials',
       title: 'Curated Collection',
-      desc: 'Hand-selected materials ensuring consistent quality and timeless appeal. Sourced responsibly from the heart of the earth.',
-      download: 'Download Catalog',
-      paving: 'Natural Paving',
-      paving_sub: 'Granite & Sandstone',
-      cladding: 'Signature Cladding',
-      cladding_sub: 'Exterior Facades',
-      flora: 'Exotic Flora',
-      flora_sub: 'Landscape Plants',
-      palms: 'Tropical Palms',
-      palms_sub: 'Garden Trees',
-      pebbles: 'River Pebbles',
-      pebbles_sub: 'Garden Accents'
+      desc: 'From rugged Bangalore stones to delicate exotic plants, we offer a comprehensive range of landscaping essentials.',
+      download: 'View Full Catalog',
+      link: 'https://loranaturals.in/products/', 
+      // UPDATED PRODUCT KEYS
+      bangalore: 'Bangalore Stones',
+      bangalore_sub: 'Paving & Slabs',
+      kadappa: 'Kadappa & Tandoor',
+      kadappa_sub: 'Limestone Pavers',
+      granite: 'Premium Granites',
+      granite_sub: 'Slabs & Tiles',
+      cladding: 'Wall Cladding',
+      cladding_sub: 'Stone Facades',
+      pebbles: 'Pebbles & Cobbles',
+      pebbles_sub: 'Garden Accents',
+      furniture: 'Stone Furniture',
+      furniture_sub: 'Benches & Decor',
+      grass_nat: 'Nature Lawn Grass',
+      grass_nat_sub: 'Mexican & Buffalo',
+      artificial: 'Artificial Solutions',
+      artificial_sub: 'Turf, Vertical & Mats',
+      plants: 'Indoor & Outdoor',
+      plants_sub: 'Plants & Trees'
     },
     works: {
       label: 'Portfolio',
@@ -116,10 +128,10 @@ const content = {
     },
     hero: {
       est: 'സ്ഥാപിതം 2016 • വയയ്ക്കൽ',
-      title1: 'കല്ലും',
+      title1: 'നാച്ചുറൽ സ്റ്റോൺസ്',
       title2: '&',
-      title3: 'മണ്ണും',
-      sub: "ഭൂമിയുടെ ഏറ്റവും മികച്ച നിർമ്മാണ സാമഗ്രികൾ നിങ്ങളുടെ മുറ്റത്തേക്ക്. നേരിട്ട് ഫാക്ടറിയിൽ നിന്ന്.",
+      title3: 'ലാൻഡ്സ്കേപ്പിംഗ്',
+      sub: "കേരളത്തിലുടനീളം ഹൈ-ക്വാളിറ്റി നാച്ചുറൽ സ്റ്റോണുകളും വിശ്വസ്തമായ ലാൻഡ്സ്കേപ്പിംഗ് സേവനങ്ങളും.\nനേരിട്ട് ഫാക്ടറിയിൽ നിന്ന് നിങ്ങളുടെ മുറ്റത്തേക്ക്.",
       cta_collection: 'ശേഖരം കാണുക',
       cta_studio: 'സ്റ്റുഡിയോ സന്ദർശിക്കുക'
     },
@@ -133,18 +145,28 @@ const content = {
     products: {
       label: 'ഞങ്ങളുടെ ഉൽപ്പന്നങ്ങൾ',
       title: 'ശേഖരങ്ങൾ',
-      desc: 'ഗുണനിലവാരവും സൗന്ദര്യവും ഉറപ്പാക്കുന്ന തിരഞ്ഞെടുക്കപ്പെട്ട സാമഗ്രികൾ. പ്രകൃതിയുടെ മടിത്തട്ടിൽ നിന്ന്.',
-      download: 'കാറ്റലോഗ് ഡൗൺലോഡ്',
-      paving: 'നാച്ചുറൽ പേവിംഗ്',
-      paving_sub: 'ഗ്രാനൈറ്റ് & സാൻഡ്സ്റ്റോൺ',
+      desc: 'ബാംഗ്ലൂർ സ്റ്റോൺ മുതൽ എക്സോട്ടിക് ചെടികൾ വരെ, ലാൻഡ്സ്കേപ്പിംഗിന് ആവശ്യമായതെല്ലാം ഒരിടത്ത്.',
+      download: 'കാറ്റലോഗ് കാണുക',
+      link: 'https://loranaturals.in/products/',
+      // UPDATED PRODUCT KEYS TRANSLATED
+      bangalore: 'ബാംഗ്ലൂർ സ്റ്റോൺസ്',
+      bangalore_sub: 'പേവിംഗ് & സ്ലാബ്സ്',
+      kadappa: 'കടപ്പ & തന്തൂർ',
+      kadappa_sub: 'ലൈംസ്റ്റോൺ',
+      granite: 'പ്രീമിയം ഗ്രാനൈറ്റ്',
+      granite_sub: 'സ്ലാബുകൾ',
       cladding: 'വാൾ ക്ലാഡിംഗ്',
-      cladding_sub: 'എക്സ്റ്റീരിയർ ഡിസൈൻ',
-      flora: 'ലാൻഡ്സ്കേപ്പ് ചെടികൾ',
-      flora_sub: 'എക്സോട്ടിക് പ്ലാന്റ്സ്',
-      palms: 'അലങ്കാര മരങ്ങൾ',
-      palms_sub: 'ഗാർഡൻ ട്രീ',
-      pebbles: 'റിവർ പെബിൾസ്',
-      pebbles_sub: 'ഗാർഡൻ അലങ്കാരങ്ങൾ'
+      cladding_sub: 'എക്സ്റ്റീരിയർ',
+      pebbles: 'പെബിൾസ് & കോബിൾസ്',
+      pebbles_sub: 'ഗാർഡൻ അലങ്കാരങ്ങൾ',
+      furniture: 'സ്റ്റോൺ ഫർണിച്ചർ',
+      furniture_sub: 'ഗാർഡൻ ഇരിപ്പിടങ്ങൾ',
+      grass_nat: 'നാച്ചുറൽ ലോൺ',
+      grass_nat_sub: 'മെക്സിക്കൻ & ബഫല്ലോ',
+      artificial: 'ആർട്ടിഫിഷ്യൽ ഗാർഡൻ',
+      artificial_sub: 'ഗ്രാസ് & വെർട്ടിക്കൽ',
+      plants: 'ഇൻഡോർ & ഔട്ട്ഡോർ',
+      plants_sub: 'ചെടികളും മരങ്ങളും'
     },
     works: {
       label: 'പോർട്ട്ഫോളിയോ',
@@ -204,7 +226,7 @@ const FadeIn = ({ children, delay = 0, className = "" }) => {
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" } // Lowered threshold for mobile
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -274,7 +296,6 @@ const Navigation = ({ lang, setLang, text }) => {
 
   const navKeys = ['story', 'collection', 'works', 'reviews', 'services'];
   
-  // Calculate text color
   const textColor = scrolled ? "text-[#4d2c18]" : "text-white";
   const toggleColor = isOpen ? "text-white" : textColor;
   const logoInvert = !isOpen && !scrolled;
@@ -282,7 +303,7 @@ const Navigation = ({ lang, setLang, text }) => {
   return (
     <nav className={navClasses}>
       <div className="container mx-auto px-4 md:px-12 flex justify-between items-center">
-        {/* LOGO - Z-Index 60 to stay above mobile menu */}
+        {/* LOGO */}
         <a href="#home" className="group z-[60] flex items-center gap-3 relative">
           <img 
             src={loraLogo} 
@@ -312,7 +333,6 @@ const Navigation = ({ lang, setLang, text }) => {
             </a>
           ))}
           
-          {/* Language Switcher */}
           <button 
             onClick={() => setLang(lang === 'en' ? 'ml' : 'en')}
             className={`flex items-center gap-2 px-3 py-1 rounded border transition-all ${
@@ -334,7 +354,7 @@ const Navigation = ({ lang, setLang, text }) => {
           </a>
         </div>
 
-        {/* Mobile Toggle & Lang - Z-Index 60 */}
+        {/* Mobile Toggle & Lang */}
         <div className="flex items-center gap-4 md:hidden z-[60]">
             <button 
                 onClick={() => setLang(lang === 'en' ? 'ml' : 'en')}
@@ -356,7 +376,7 @@ const Navigation = ({ lang, setLang, text }) => {
             </button>
         </div>
 
-        {/* Mobile Menu Overlay - Z-Index 50 (below logo/toggle, above page) */}
+        {/* Mobile Menu Overlay */}
         <div className={`fixed inset-0 bg-[#4d2c18] z-50 flex flex-col justify-center items-center gap-8 transition-all duration-500 cubic-bezier(0.7,0,0.3,1) ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}>
            {[...navKeys, 'contact'].map((key) => (
             <a key={key} href={`#${key}`} onClick={() => setIsOpen(false)} className="text-3xl font-serif text-white/90 hover:text-[#fbb722] hover:italic transition-all">
@@ -370,14 +390,12 @@ const Navigation = ({ lang, setLang, text }) => {
 };
 
 const Hero = ({ text }) => (
-  // Use 100svh for better mobile browser height handling
   <header id="home" className="relative h-[100svh] w-full overflow-hidden flex items-center justify-center bg-neutral-900">
     <div className="absolute inset-0 w-full h-full">
       <div className="absolute inset-0 bg-black/40 z-10"></div>
       <img 
         src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=2600" 
         alt="Serene Landscape" 
-        // Removed scale animation for mobile to prevent overflow issues
         className="w-full h-full object-cover animate-[scale_25s_ease-in-out_infinite_alternate]" 
       />
     </div>
@@ -390,12 +408,11 @@ const Hero = ({ text }) => (
             <span className="h-px w-6 md:w-8 bg-white/60"></span>
         </div>
         
-        {/* Adjusted Font Sizes: text-4xl on mobile (safer) -> text-8xl on desktop */}
-        <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-serif font-medium leading-[1.1] md:leading-[0.9] mb-6 md:mb-8 tracking-tight">
-          {text.title1} <span className="italic font-light opacity-80">{text.title2}</span> {text.title3}
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-medium leading-[1.1] md:leading-[0.9] mb-6 md:mb-8 tracking-tight">
+          {text.title1} <span className="italic font-light opacity-80">{text.title2}</span> <br className="md:hidden" /> {text.title3}
         </h1>
         
-        <p className="max-w-xs md:max-w-xl mx-auto text-sm md:text-xl text-white/90 font-light mb-8 md:mb-12 leading-relaxed tracking-wide whitespace-pre-line">
+        <p className="max-w-xs md:max-w-2xl mx-auto text-sm md:text-xl text-white/90 font-light mb-8 md:mb-12 leading-relaxed tracking-wide whitespace-pre-line">
           {text.sub}
         </p>
         
@@ -403,7 +420,7 @@ const Hero = ({ text }) => (
           <a href="#collection" className="bg-white text-[#4d2c18] w-full sm:w-auto px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-neutral-100 transition-colors">
             {text.cta_collection}
           </a>
-          <a href="#contact" className="border border-white/40 backdrop-blur-sm w-full sm:w-auto text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-[#4d2c18] transition-all">
+          <a href="https://maps.app.goo.gl/siGegDRjxeDLGqFK9" className="border border-white/40 backdrop-blur-sm w-full sm:w-auto text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-[#4d2c18] transition-all">
             {text.cta_studio}
           </a>
         </div>
@@ -419,7 +436,6 @@ const About = ({ text }) => (
     <div className="container mx-auto px-4 md:px-12">
       <div className="grid lg:grid-cols-12 gap-12 lg:gap-24 items-center">
         <div className="lg:col-span-6 lg:order-2 relative w-full">
-             {/* Hidden decorative border on mobile to prevent overflow */}
              <div className="hidden md:block absolute -top-10 -right-10 w-full h-full border border-neutral-300 z-0"></div>
              <FadeIn delay={200}>
                 <ParallaxImage 
@@ -451,50 +467,64 @@ const About = ({ text }) => (
   </section>
 );
 
-const ProductCard = ({ title, subtitle, img, wide = false }) => (
-  <div className={`group relative overflow-hidden bg-neutral-900 ${wide ? 'md:col-span-2' : ''} aspect-[4/3] md:aspect-auto h-[300px] md:h-[500px] w-full`}>
-    <img 
-      src={img} 
-      alt={title} 
-      className="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110 opacity-90 group-hover:opacity-70" 
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-90 transition-opacity duration-500"></div>
-    
-    <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
-      <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-        <span className="text-white/70 text-[10px] font-bold uppercase tracking-widest mb-2 block">{subtitle}</span>
-        <h3 className="text-2xl md:text-3xl font-serif text-white flex items-end justify-between group-hover:text-[#fbb722] transition-colors">
-          {title}
-          <div className="bg-white text-[#4d2c18] p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0 hidden md:block">
-             <ArrowUpRight size={20} />
-          </div>
-        </h3>
-      </div>
-    </div>
-  </div>
-);
+// --- UPDATED PRODUCTS COMPONENT (Clean Image / No Shadow / No Text Overlay) ---
 
-const Products = ({ text }) => (
+const Products = ({ text, lang }) => (
   <section id="collection" className="py-20 md:py-32 bg-white w-full">
     <div className="container mx-auto px-4 md:px-12">
-      <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-20 gap-8 border-b border-neutral-100 pb-8">
+      {/* Section Header */}
+      <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-8 border-b border-neutral-100 pb-8">
         <div className="max-w-2xl">
-          <span className="text-[#4d2c18] text-xs font-bold uppercase tracking-widest block mb-4">{text.label}</span>
-          <h2 className="text-3xl md:text-7xl font-serif text-[#4d2c18] mb-4 md:mb-6">{text.title}</h2>
-          <p className="text-neutral-500 text-base md:text-lg font-light max-w-lg">{text.desc}</p>
+          <span className="text-[#4d2c18] text-xs font-bold uppercase tracking-widest block mb-4">
+            {text.label}
+          </span>
+          <h2 className="text-3xl md:text-7xl font-serif text-[#4d2c18] mb-4 md:mb-6">
+            {text.title}
+          </h2>
+          <p className="text-neutral-500 text-base md:text-lg font-light max-w-lg">
+            {text.desc}
+          </p>
         </div>
-        <a href="#contact" className="group flex items-center gap-4 text-[#4d2c18] text-sm font-bold uppercase tracking-widest hover:text-[#4d2c18]/80 transition-colors">
-          {text.download} <span className="bg-neutral-100 p-3 rounded-full group-hover:bg-[#fbb722]/20 transition-colors"><MoveRight size={16} /></span>
+        <a 
+          href={text.link} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="group flex items-center gap-4 text-[#4d2c18] text-sm font-bold uppercase tracking-widest hover:text-[#4d2c18]/80 transition-colors"
+        >
+          {text.download} 
+          <span className="bg-neutral-100 p-3 rounded-full group-hover:bg-[#fbb722]/20 transition-colors">
+            <MoveRight size={16} />
+          </span>
         </a>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
-        <FadeIn delay={0}><ProductCard title={text.paving} subtitle={text.paving_sub} img="https://lh3.googleusercontent.com/p/AF1QipPJIavqRaKIK22Pga43_-quQvuQfjfQ3A1I6mTD=s1360-w1360-h1020" /></FadeIn>
-        <FadeIn delay={100} className="md:col-span-2"><ProductCard title={text.cladding} subtitle={text.cladding_sub} img="https://lh3.googleusercontent.com/p/AF1QipMoHAzwKLdf65FevRQkOCsmi_JNQN1oICfNRl1m=s1360-w1360-h1020" wide /></FadeIn>
-        <FadeIn delay={200}><ProductCard title={text.flora} subtitle={text.flora_sub} img="https://lh3.googleusercontent.com/p/AF1QipN94YUH8oJZo8riXdTh0purwfOQLPipUebf75Ql=s1360-w1360-h1020" /></FadeIn>
-        <FadeIn delay={250}><ProductCard title={text.palms} subtitle={text.palms_sub} img="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&q=80&w=1200" /></FadeIn>
-        <FadeIn delay={300}><ProductCard title={text.pebbles} subtitle={text.pebbles_sub} img="https://lh3.googleusercontent.com/p/AF1QipNXubpkAmPFoEJLGBC9h2JqESD0YQg8hlyEjYA4=s1360-w1360-h1020" /></FadeIn>
-      </div>
+      {/* Clean Image Display (No shadow, no text overlay, just hover arrow) */}
+      <FadeIn delay={0}>
+        {/* Removed shadow-2xl class */}
+        <div className="relative w-full overflow-hidden rounded-sm group cursor-pointer">
+          <img 
+            src={collectionImg} 
+            alt="Lora Naturals Collection" 
+            className="w-full h-full object-cover object-center"
+          />
+          
+          <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end">
+            <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+              
+              {/* Category list removed */}
+
+              {/* Border and H3 heading removed */}
+              <div className="flex justify-end items-end">
+                
+                {/* Only the hover arrow remains */}
+                <div className="bg-white text-[#4d2c18] p-4 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0">
+                  <ArrowUpRight size={24} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </FadeIn>
     </div>
   </section>
 );
@@ -516,7 +546,7 @@ const RecentWorks = ({ text }) => (
             {img: "https://lh3.googleusercontent.com/p/AF1QipO9oY5QO04AkpAbuVKxrZpTcbbg_k2u3oiZmM8s=s1360-w1360-h1020", title: "Courtyard Design", loc: "Kottarakkara"},
             {img: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyQymwRa9_2Mn18nsP2Qmtj--eUn8-4tzJ8PHZ1DMILcFaA_1M6WAbZc1LV0WCUorU5XVyJUQqV2HOh9YFxx6-g9FpTxHa29ZkwZA7KnaBmYBI6K5s0ZAlbC7hki93AH6aFd66_=s1360-w1360-h1020", title: "Driveway Paving", loc: "Punalur"},
             {img: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwaXqOWHqJO1QQWytuL8oC3zTyvFPSQ7eGpgIjdA2aWn3N8krRsq3Sj-YdpCn5Mh-A0PcgAeXERdAcHdcxgxg5pAoSNCs35bg9dXSj0gC_ma5NBsfiH1__Zq_G3tqd54blDwRGtxQ=s1360-w1360-h1020", title: "Patio Walkway", loc: "Anchal"},
-            {img: "https://lh3.googleusercontent.com/p/AF1QipPQu8qL8bHRR416wSfxfyWC_52KCl-tBdRaE6eL=s1360-w1360-h1020", title: "Resort Landscape", loc: "Varkala"},
+            {img: "https://lh3.googleusercontent.com/p/AF1QipPQu8qL8bHRR416wSfxfyWC_52KCl-tBdRaE6eL=s1360-w1360-h1020", title: "Resort Landscape", loc: "Chengannur"},
             {img: "https://lh3.googleusercontent.com/p/AF1QipNfGAWmw92hdopwyXiN9k-Z7Y62V1ZIWpwsFIvk=s1360-w1360-h1020", title: "Stone Wall Feature", loc: "Pathanamthitta"},
             {img: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy8QykO6YGdSQXY3FqW5ByOB_waDr74rifAwibUn48oeLA7qnc8zgNF_f7G974LILUstd3DF5VXuaM42AZfYEYU4VmkVXohWBBVwGSQ1AspSBsOuUn-ogUdWjxDnXpCK4OC0U06-_rsh9Q-=s1360-w1360-h1020", title: "Outdoor Living", loc: "Alleppey"},
             {img: "https://lh3.googleusercontent.com/p/AF1QipOA4O8auY7C_J33V1sHJSPm4lB3wOmCFxdwllJR=s1360-w1360-h1020", title: "Entryway Design", loc: "Calicut"},
@@ -648,7 +678,7 @@ const Contact = ({ text }) => {
                     <div className="mt-1 text-[#fbb722] group-hover:scale-110 transition-transform"><MapPin size={24} /></div>
                     <div>
                         <h4 className="font-serif text-xl md:text-2xl mb-2 text-white">{text.visit}</h4>
-                        <p className="text-white/50 font-light leading-relaxed text-sm md:text-base">Vikas Bhavan, Vayackal<br/>Kollam, Kerala 691532</p>
+                        <p className="text-white/50 font-light leading-relaxed text-sm md:text-base">LORA NATURALS, LMS LOWER PRIMARY SCHOOL,<br/>OLD MARKET, OPOSITE TO, Vayakal, Kerala 691532</p>
                         <a href="https://maps.app.goo.gl/siGegDRjxeDLGqFK9" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-xs font-bold uppercase tracking-widest border-b border-white/30 pb-1 hover:text-[#fbb722] hover:border-[#fbb722] transition-colors">Get Directions</a>
                     </div>
                 </div>
@@ -738,7 +768,6 @@ const Footer = ({ text }) => (
         </div>
       </div>
 
-      {/* Styled Footer Credit */}
       <div className="flex flex-col md:flex-row justify-between items-center text-[10px] md:text-xs text-white/30 font-bold uppercase tracking-widest gap-4 md:gap-0 text-center md:text-left pt-2">
         <div className="flex flex-col md:flex-row gap-2 md:gap-6 items-center">
             <p>© {new Date().getFullYear()} Lora Natural Ventures.</p>
@@ -764,13 +793,12 @@ const App = () => {
   const text = content[lang];
 
   return (
-    // Fixed: Added overflow-x-hidden and max-w-[100vw] to prevent any horizontal scrolling
     <div className="min-h-screen bg-white font-sans text-neutral-900 selection:bg-[#fbb722] selection:text-[#4d2c18] scroll-smooth overflow-x-hidden w-full max-w-[100vw] relative">
       <SEO />
       <Navigation lang={lang} setLang={setLang} text={text.nav} />
       <Hero text={text.hero} />
       <About text={text.about} />
-      <Products text={text.products} />
+      <Products text={text.products} lang={lang} />
       <RecentWorks text={text.works} />
       <Testimonials text={text.reviews} />
       <Services text={text.services} />
