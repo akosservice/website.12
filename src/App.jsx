@@ -18,6 +18,8 @@ import {
 import loraLogo from './assets/lorapng.png';
 // Importing the collection image
 import collectionImg from './assets/image.jpg'; 
+// Importing the PDF Brochure
+import catalogPdf from './assets/Lora Brochure compressed 2025.pdf';
 
 // --- content / Translations ---
 
@@ -53,8 +55,8 @@ const content = {
       title: 'Curated Collection',
       desc: 'From rugged Bangalore stones to delicate exotic plants, we offer a comprehensive range of landscaping essentials.',
       download: 'View Full Catalog',
+      // link property is no longer used in JSX, we use the import directly
       link: 'https://loranaturals.in/products/', 
-      // UPDATED PRODUCT KEYS
       bangalore: 'Bangalore Stones',
       bangalore_sub: 'Paving & Slabs',
       kadappa: 'Kadappa & Tandoor',
@@ -148,7 +150,6 @@ const content = {
       desc: 'ബാംഗ്ലൂർ സ്റ്റോൺ മുതൽ എക്സോട്ടിക് ചെടികൾ വരെ, ലാൻഡ്സ്കേപ്പിംഗിന് ആവശ്യമായതെല്ലാം ഒരിടത്ത്.',
       download: 'കാറ്റലോഗ് കാണുക',
       link: 'https://loranaturals.in/products/',
-      // UPDATED PRODUCT KEYS TRANSLATED
       bangalore: 'ബാംഗ്ലൂർ സ്റ്റോൺസ്',
       bangalore_sub: 'പേവിംഗ് & സ്ലാബ്സ്',
       kadappa: 'കടപ്പ & തന്തൂർ',
@@ -467,7 +468,7 @@ const About = ({ text }) => (
   </section>
 );
 
-// --- UPDATED PRODUCTS COMPONENT (Clean Image / No Shadow / No Text Overlay) ---
+// --- UPDATED PRODUCTS COMPONENT (Now downloads PDF) ---
 
 const Products = ({ text, lang }) => (
   <section id="collection" className="py-20 md:py-32 bg-white w-full">
@@ -486,9 +487,8 @@ const Products = ({ text, lang }) => (
           </p>
         </div>
         <a 
-          href={text.link} 
-          target="_blank" 
-          rel="noopener noreferrer" 
+          href={catalogPdf} 
+          download="Lora Brochure compressed 2025.pdf" // Added download attribute
           className="group flex items-center gap-4 text-[#4d2c18] text-sm font-bold uppercase tracking-widest hover:text-[#4d2c18]/80 transition-colors"
         >
           {text.download} 
@@ -500,7 +500,6 @@ const Products = ({ text, lang }) => (
 
       {/* Clean Image Display (No shadow, no text overlay, just hover arrow) */}
       <FadeIn delay={0}>
-        {/* Removed shadow-2xl class */}
         <div className="relative w-full overflow-hidden rounded-sm group cursor-pointer">
           <img 
             src={collectionImg} 
@@ -511,9 +510,6 @@ const Products = ({ text, lang }) => (
           <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end">
             <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
               
-              {/* Category list removed */}
-
-              {/* Border and H3 heading removed */}
               <div className="flex justify-end items-end">
                 
                 {/* Only the hover arrow remains */}
@@ -587,14 +583,14 @@ const Testimonials = ({ text }) => (
       <div className="grid md:grid-cols-3 gap-6 md:gap-8">
         {[
           {
-            name: "Arun Kumar",
-            text: "Best place for natural stones in Kollam. Very good collection and affordable prices. The staff was extremely helpful in selecting the right materials for our driveway.",
-            loc: "Kottarakkara",
-            img: "https://lh3.googleusercontent.com/p/AF1QipPqa_AF1pLKqqyYWZ-lEmqmun7kGjZpXomOG1oz=s1360-w1360-h1020"
+            name: "Joby Titus",
+            text: "Lora Naturals exceeded our expectations with their stone laying and garden work. The quality, craftsmanship, and attention to detail were outstanding, giving our home a fresh and elegant look. We appreciate their professionalism and dedication. Thank you for the excellent work—highly recommended!",
+            loc: "",
+            img: "https://lh3.googleusercontent.com/a-/ALV-UjV0Xr3oJBwRD8_1Ip4gST_ZjyHZyVhoq3KpFZD61xFEcxYKdffX=w144-h144-p-rp-mo-br100"
           },
           {
             name: "Sarah Thomas",
-            text: "Excellent quality paving stones. We did our courtyard with their Bangalore stones and it looks amazing. Direct factory dealing makes a huge difference in price.",
+            text: "",
             loc: "Trivandrum",
             img: "https://lh3.googleusercontent.com/p/AF1QipO9oY5QO04AkpAbuVKxrZpTcbbg_k2u3oiZmM8s=s1360-w1360-h1020"
           },
